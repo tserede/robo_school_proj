@@ -1,0 +1,23 @@
+@import './Helpers/nullstyle.scss';
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Lato:wght@300;400;700&display=swap");
+
+body {
+  height: 100%;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 18px;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+._container {
+  max-width: 1524px;
+  padding: 0px 15px 0px 184px;
+  margin: 0 auto;
+  @media (max-width: 765px) {
+    padding: 0px 10px;
+  }
+}

@@ -1,16 +1,17 @@
 import React from 'react';
-import { Header } from './Components/Common/Header';
 import './index.css';
-import { Main } from 'Components/Main';
-import { Footer } from 'Components/Common/Footer';
+import { Route, Routes } from 'react-router-dom';
+import { MainContent } from 'Containers/Main';
+import { PaymentPage } from 'Containers/PaymentPage';
+import { routes } from 'Helpers/Constants/Routes';
+
 
 function App() {
   return (
-    <div className="wrapper">
-      <Header />
-      <Main />
-      <Footer/>
-    </div>
+    <Routes>
+      <Route path={routes.main} element={<MainContent />} />
+      <Route path={routes.payment} element={<PaymentPage />} />
+    </Routes>
   );
 }
 

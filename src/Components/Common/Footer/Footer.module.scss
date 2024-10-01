@@ -1,11 +1,20 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
   background: #141024;
-  padding: 40px 100px;
+  padding: 40px 0px;
   color: #fff;
   @media (max-width: 480px) {
     padding: 10px 0px 0px 0px;
+  }
+  & ._container {
+    display: flex;
+    align-items: center;
+    max-width: 1750px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+    @media (max-width: 765px) {
+      padding: 0px 10px;
+    }
   }
   a {
     color: inherit;

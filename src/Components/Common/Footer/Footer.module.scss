@@ -6,6 +6,8 @@
     padding: 10px 0px 0px 0px;
   }
   & ._container {
+    position: relative;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     max-width: 1750px;
@@ -14,10 +16,19 @@
     justify-content: space-between;
     @media (max-width: 765px) {
       padding: 0px 10px;
+      flex-direction: column;
     }
   }
   a {
     color: inherit;
+  }
+
+  &__leftgroup {
+    flex-wrap: wrap;
+    @media (max-width: 765px) {
+      justify-content: center;
+      text-align: center;
+    }
   }
   &__logo {
     display: block;
@@ -32,9 +43,7 @@
       flex: 1 1 90%;
       order: 0;
       font-size: 23px;
-    }
-    @media (max-width: 500px) {
-      margin: 10px 0px 0px 0px;
+      margin: 40px 0px 86px 0px;
     }
     @media (max-width: 420px) {
       text-shadow:
@@ -51,8 +60,27 @@
     font-size: 30px;
     font-weight: 600;
     line-height: 160%;
+    @media (max-width: 1150px) {
+      font-size: 25px;
+    }
+    @media (max-width: 900px) {
+      font-size: 23px;
+    }
+    @media (max-width: 950px) {
+      font-size: 18px;
+      margin: 0px;
+    }
+    @media (max-width: 765px) {
+      font-size: 16px;
+      position: relative;
+      top: -84px;
+    }
   }
   &__copyright {
     font-size: 16px;
+    @media (max-width: 765px) {
+      position: relative;
+      top: 14px;
+    }
   }
 }

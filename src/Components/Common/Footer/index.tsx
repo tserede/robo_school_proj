@@ -1,14 +1,15 @@
 import React from 'react';
 import style from './Footer.module.scss';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className={style._container}>
-        <div>
-          <a href="" className={style.footer__logo}>
+        <div className={style.footer__leftgroup}>
+          <Link to="/" className={style.footer__logo}>
             ROBO.SCHOOL
-          </a>
+          </Link>
           <p className={style.footer__copyright}>© ROBO.SCHOOL</p>
         </div>
         <div>

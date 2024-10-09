@@ -1,0 +1,98 @@
+
+.pageabout {
+  padding: 120px 0px;
+  font-size: 30px;
+  line-height: 160%;
+  @media (max-width: 1320px) {
+    padding: 100px 0px;
+  }
+  @media (max-width: 920px) {
+    padding: 80px 0px;
+  }
+  @media (max-width: 920px) {
+    padding: 60px 0px 40px 0px;
+  }
+  &__practice{
+    position: relative;
+  }
+  &__about {
+    padding: 0px 22.99% 0px 0px;
+    margin: 0px 0px 60px 0px;
+    @media (max-width: 1000px) {
+      margin: 0px 0px 50px 0px;
+      padding: 0px;
+    }
+    @media (max-width: 480px) {
+      margin: 0px 0px 40px 0px;
+      font-size: 20px;
+      line-height: 160%;
+    }
+
+    & span {
+      font-weight: 600;
+    }
+  }
+  &__columns {
+    display: flex;
+    @media (max-width: 1320px) {
+      margin: 0px -15px;
+    }
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+      margin: -10px -20px;
+    }
+  }
+  &__columns_item {
+    margin: 0px 20px;
+    flex: 0 1 25%;
+    @media (max-width: 1550px) {
+      margin: 0px 15px;
+    }
+    @media (max-width: 1356px) {
+      margin: 0px 0px;
+      padding: 0 15px;
+    }
+    @media (max-width: 1000px) {
+      flex: 0 0 50%;
+      padding: 0px 25px;
+      margin: 15px 0px;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      flex: 0 0 100%;
+    }
+  }
+}
+.item {
+  &__quantity {
+    color: #d52027;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0px;
+    line-height: 160%;
+    & p {
+      @media (max-width: 480px) {
+        margin: 0px;
+      }
+    }
+
+    @media (max-width: 1550px) {
+      font-size: 60px;
+    }
+    @media (max-width: 1356px) {
+      font-size: 55px;
+    }
+    @media (max-width: 480px) {
+      font-size: 60px;
+    }
+  }
+
+  &__text {
+    opacity: 70%;
+    font-size: 18px;
+    line-height: 160%;
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+}

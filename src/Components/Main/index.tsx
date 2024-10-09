@@ -1,10 +1,17 @@
 import React from "react";
 import { PageMainBlock } from "./Page_main-block";
+import { PageAbout } from "./Page_about";
 import style from "./Main.module.scss"
+import { PageWhatyouget } from "./Page_whatyouget";
+
 
 
 export const Main=()=>{
     return(
-        <main className={style.page}><PageMainBlock/></main>
+        <div className={style.wrapper}>
+        <PageMainBlock/>
+        <PageAbout/>
+        <PageWhatyouget/>
+        </div>
     )
 }

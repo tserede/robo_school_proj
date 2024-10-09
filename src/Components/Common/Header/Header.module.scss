@@ -14,8 +14,7 @@
       @media (max-width: 765px) {
         padding: 0px 10px;
       }
-    }
-  
+  }
     &__logo {
       display: block;
       color: #fff;
@@ -84,16 +83,20 @@
     }
   }
   .menu {
-    margin: 0px 130/1750 * 100% 0px 0px;
+    margin: 0px 20px 0px 0px;
+    @media (max-width: 774px) {
+      max-width: 310px;
+    }
+    
     @media (max-width: 767px) {
       order: 2;
       margin: 0;
     }
     &__list {
+      flex-wrap: wrap;
       @media (min-width: 767px) {
         display: flex;
         flex: 1 1 auto;
-        flex-wrap: wrap;
       }
     }
     &__body {
@@ -147,7 +150,7 @@
           margin: 0px 25px 0px 0px;
         }
         @media (max-width: 970px) {
-          margin: 0px 20px 0px 0px;
+          margin: 0px 15px 0px 0px;
         }
         @media (max-width: 767px) {
           margin: 0px 0px 20px 0px;

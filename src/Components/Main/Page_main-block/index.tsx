@@ -12,7 +12,7 @@ export const PageMainBlock=()=>{
             <a href="" className={style.mainblock__button}>Записаться на курс</a>
         </div>
         <div className={style.mainblock__image}>
-            <img src="./images/Main/Group 211.png" alt=""/>
+            <img src="./images/Main/Group 211.png" alt="main-banner"/>
         </div>
        </div> 
     </div>

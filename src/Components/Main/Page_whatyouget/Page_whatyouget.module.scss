@@ -1,0 +1,97 @@
+.whatyouget {
+  background-color: #f9f9f9;
+  padding: 100px 0px;
+  line-height: 160%;
+  @media (max-width: 920px) {
+    padding: 70px 0px 70px 0px;
+  }
+  @media (max-width: 768px) {
+    padding: 55px 0px 52px 0px;
+  }
+  @media (max-width: 480px) {
+    padding: 40px 0px 52px 0px;
+  }
+  &__practice{
+    position: relative;
+    display: inline-block;
+  }
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+    @media (max-width: 920px) {
+      text-align: center;
+      font-size: 45px;
+    }
+    @media (max-width: 480px) {
+      text-align: center;
+      font-size: 30px;
+      margin: 0px 0px 40px 0px;
+    }
+  }
+  &__colomns {
+    display: flex;
+    padding: 60px 0px 0px 0px;
+    margin: 0px -10px;
+    justify-content: center;
+    @media (max-width: 920px) {
+      flex-wrap: wrap;
+      margin: -20px -10px;
+    }
+    @media (max-width: 500px) {
+      padding: 0px;
+      margin: -15px -10px;
+    }
+  }
+  &__colomn {
+    margin: 0px 20px;
+    flex: 0 1 33.33333%;
+    @media (max-width: 920px) {
+      text-align: center;
+      flex: 0 1 50%;
+      margin: 20px 0px;
+      padding: 0px 10px;
+    }
+
+    @media (max-width: 500px) {
+      text-align: center;
+      flex: 0 1 100%;
+      margin: 15px 0px;
+      padding: 0px 10px;
+    }
+    &:last-child {
+      @media (max-width: 920px) {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+  &__info{
+    position: absolute;
+    z-index: 5;
+    top:0;
+    right: -34px;
+    width: 24px;
+    height: 24px;
+  }
+  &__columntitle {
+    z-index: 1;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    line-height: 160%;
+    text-align: center;
+    justify-content: center;
+    @media (max-width: 480px) {
+      font-size: 20px;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+}

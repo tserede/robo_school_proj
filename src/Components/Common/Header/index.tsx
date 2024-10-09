@@ -17,8 +17,8 @@ export const Header=()=>{
                             </ul>
                     </nav>
                     <div className={`${style.menu__icon} ${style.iconmenu}`}>
-                        <img src="./images/Header/menu.png" alt="" />
-                        <img src="./images/Header/menu_close.png" alt="" />
+                        <img src="./images/Header/menu.png" alt="menu" />
+                        <img src="./images/Header/menu_close.png" alt="menu_close" />
                     </div>
                 </div>
             <div className={style.header__tel}>

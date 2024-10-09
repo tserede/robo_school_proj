@@ -15,6 +15,7 @@
     position: relative;
     display: inline-block;
   }
+
   &__title {
     font-size: 50px;
     font-weight: 600;
@@ -67,12 +68,26 @@
     }
   }
   &__info{
+    cursor:help;
     position: absolute;
     z-index: 5;
     top:0;
     right: -34px;
     width: 24px;
     height: 24px;
+  }
+  &__explanation{
+    position: absolute;
+    z-index: 5;
+    width: text-content;
+    text-align: center;
+    top:-66px;
+    right: -261px;
+    padding: 15px 20px;
+    border: 1px solid #141024;
+    border-radius: 5px;
+    background-color: #ffff;
+    font-size: 16px;
   }
   &__columntitle {
     z-index: 1;

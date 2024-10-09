@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './Page_whatyouget.module.scss';
 
 export const PageWhatyouget = () => {
+  const [explanation, setExplanation] = useState(false);
+  const handleMouseEnter = () => {
+    setExplanation(true);
+  };
+  const handleMouseLeave = () => {
+    setExplanation(false);
+  };
   return (
     <section className={`${style.page__pagewhatyouget} ${style.whatyouget}`}>
       <div className="_container">
@@ -26,11 +33,14 @@ export const PageWhatyouget = () => {
           <div className={style.whatyouget__colomn}>
             <div className={style.whatyouget__item}>
               <div className={style.whatyouget__practice}>
-                <h4 data-descr="При наличии свободных мест" className={`${style.whatyouget__columntitle} ${style.whatyouget__columntitle_info}`}>
+                <h4 className={`${style.whatyouget__columntitle} ${style.whatyouget__columntitle_info}`}>
                   Практику
                 </h4>
-                <div className={style.whatyouget__info}><img src="./images/Main/info.png" alt="info" /></div>
-              </div >
+                <div className={style.whatyouget__info}>
+                  <img tabIndex={0} onMouseEnter={handleMouseEnter}  onMouseLeave={handleMouseLeave} src="./images/Main/info.png" alt="info" />
+                </div>
+                {explanation && <div className={style.whatyouget__explanation}>При наличии свободных мест</div>}
+              </div>
               <p className={style.whatyouget__text}>Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
             </div>
           </div>
